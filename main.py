@@ -8,7 +8,7 @@ cur = con.cursor()
 #cur.execute("CREATE TABLE Account(DiscordID text, Balance integer);")
 
 guild_ids = [938687715673767937]
-token = "MTA1MjgzNzYyMzgzMzU1OTExMA.GQ1OTX.QirONV9ZrY-xxGvoK2OnMCzMRBwxeimn9vIgKI"
+token = "${{secrets.TOKEN}}"
 intents = nextcord.Intents.default()
 help_command = commands.DefaultHelpCommand(no_category='Commands')
 bot = commands.Bot(command_prefix=">", intents=intents, help_command=help_command)
